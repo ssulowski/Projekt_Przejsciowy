@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 from lightgbm import LGBMClassifier
 
 # === Twoja ścieżka do CSV ===
-CSV = r"C:\Users\szymi\OneDrive\Pulpit\Studia\II_Stopien\Projekt_Przejsciowy\models_data.csv"
+CSV = r"D:\Projekt_Przejsciowy\CSV\models_data.csv"
 
 # === Kolumny w Twoim CSV ===
 FEATURE_COLUMNS = ["D_med_mm", "W_med_mm", "C_med_mm", "A_med_deg"]
@@ -225,4 +225,5 @@ plot_confusion(y, y_pred_lgbm, class_names, fig_dir / "lgbm_confusion_matrix.png
 print(f"\n[FIGURES] Zapisano wykresy do: {fig_dir}")
 print(f"Accuracy SVM={acc_svm:.3f}  LightGBM={acc_lgbm:.3f}")
 print(f"Macro-F1 SVM={f1_score(y, y_pred_svm, average='macro'):.3f}  "
+
 f"LightGBM={f1_score(y, y_pred_lgbm, average='macro'):.3f}")
