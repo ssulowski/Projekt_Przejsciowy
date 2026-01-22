@@ -5,9 +5,9 @@ import os, csv, math, random, statistics, json, time, re
 # =========================================================
 # USTAWIENIA GLOBALNE
 # =========================================================
-EXPORT_DIR = r"C:\Users\szymi\OneDrive\Pulpit\Studia\II_Stopien\Praca\roi\Noweklasy\MODEL"
-TOP_SURFACE_DIR = r"C:\Users\szymi\OneDrive\Pulpit\Studia\II_Stopien\Praca\roi\Noweklasy\TOP_SURFACE"
-CSV_DIR = r"C:\Users\szymi\OneDrive\Pulpit\Studia\II_Stopien\Praca\roi\Noweklasy\CSV"
+EXPORT_DIR = r"D:\Projekt_Przejsciowy\MODEL"
+TOP_SURFACE_DIR = r"D:\Projekt_Przejsciowy\TOP_SURFACE"
+CSV_DIR = r"D:\Projekt_Przejsciowy\CSV"
 THR_PATH = os.path.join(CSV_DIR, "_dwca_thresholds.json")
 MODELS_CSV_PATH = os.path.join(CSV_DIR, "models_data.csv")
 START_MODEL_INDEX = 0
@@ -1455,3 +1455,4 @@ def run(context):
         except: pass
         if ui:
             ui.messageBox(f"Błąd: {str(e)}\n{traceback.format_exc()}")
+
